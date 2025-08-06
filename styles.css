@@ -1,6 +1,60 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 
 
+ /* Custom CSS for animations */
+    
+ @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+
+/* Custom gradient text */
+.gradient-text {
+    background: linear-gradient(90deg, #cd3f2c, #8b5cf6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Project card hover effect */
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+/* Custom CSS for animations */
+
+/* Moving text section */
 .movingtext {
   display: inline-block;
   vertical-align: top;
@@ -54,3 +108,5 @@
 .midnight {
   color: #2c3e50;
 }
+
+/* Moving text section */
