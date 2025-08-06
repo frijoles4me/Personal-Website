@@ -6,6 +6,7 @@
     <title>AC | Personal Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* Custom CSS for animations */
         @keyframes fadeIn {
@@ -100,7 +101,18 @@
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-8 md:mb-0 fade-in">
                     <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm <span class="gradient-text">Alvaro Cortes</span></h1>
-                    <h2 class="text-2xl md:text-3xl font-semibold text-gray-600 mb-6">Information Technology Specialist</h2>
+                    <!-- <h2 class="text-2xl md:text-3xl font-semibold text-gray-600 mb-6">Information Technology Specialist</h2> -->
+                     <h2 class="text text-2xl md:text-3xl font-semibold text-gray-600 mb-6">
+                        <!-- <p class="movingtext">Nachos are</p> -->
+                        <p class="movingtext">
+                            
+                            <span class="word belize">Web_Developer.</span>
+                            <span class="word wisteria">Information_Technology_Specialist.</span>
+                            <span class="word pomegranate">Software_Developer.</span>
+                            <span class="word green">Computer_Technician.</span>
+                            
+                        </p>
+                    </h2>
                     <p class="text-gray-600 mb-8 max-w-lg"> Experience working with different types of technologies from programing languages to building computers.
                     </p>
                     <div class="flex space-x-4">
@@ -603,4 +615,6 @@
         window.addEventListener('scroll', animateOnScroll);
     </script>
 </body>
+
+<script src="movingText.js"></script>
 </html>
